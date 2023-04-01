@@ -66,7 +66,7 @@ function Screen({value}) {
         <div className="card">
             {
                 value == "Screen1" ? <DataTable value={customers} paginator rows={5} dataKey="id" filters={filters} filterDisplay="row" loading={loading}
-                    globalFilterFields={['id', 'name', 'country.name', 'representative.name', 'status']} header={header} emptyMessage="No Data found.">
+                    globalFilterFields={['id', 'name', 'country.name', 'country.code', 'company', 'representative', 'date', 'balance']} header={header} emptyMessage="No Data found.">
                     <Column field="id" header="Id" filter filterPlaceholder="Search id" style={{ minWidth: '11rem' }} />
                     <Column field="name" header="Name" filter filterPlaceholder="Search name" style={{ minWidth: '13rem' }} />
                     <Column field="country.name" header="Country" filter filterPlaceholder="Search country" style={{ minWidth: '12rem' }}  />
